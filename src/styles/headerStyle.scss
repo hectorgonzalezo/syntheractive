@@ -1,0 +1,10 @@
+.App header {
+  padding: 15px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto auto;
+  gap: 15px;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
