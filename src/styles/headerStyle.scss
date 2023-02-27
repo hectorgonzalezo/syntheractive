@@ -1,10 +1,15 @@
+@import 'colors';
+
 .App header {
   padding: 15px;
+  background-color: $background;
   display: grid;
-  align-items: center;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr auto auto;
   gap: 15px;
-  position: sticky;
-  top: 0px;
-  z-index: 10;
+  h1{
+    font-size: 2rem;
+  }
+  button{
+    align-self: flex-end;
+  }
 }

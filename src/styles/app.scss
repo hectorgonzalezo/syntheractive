@@ -1,6 +1,57 @@
+@import 'colors';
+
+:root{
+  font-size: 16px;
+}
+
 .App{
   display: grid;
   min-height: 100vh;
   max-width: 100vw;
   grid-template-rows: auto 1fr 50px;
+}
+
+button{
+  border: none;
+  font-size: 1rem;
+  background-color: $van-dyke;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  border-radius: 2rem;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  justify-items: center;
+  grid-template-areas: "visualizer presets"
+                       "rack rack"
+                       "keyboard keyboard";
+}
+
+.visualizer-container{
+  grid-area: visualizer;
+}
+
+.presets-container{
+  grid-area: presets;
+}
+
+.synth-rack{
+  grid-area: rack;
+}
+
+.keyboard-container{
+  grid-area: keyboard;
+}
+
+* {
+  outline: 1px dashed red;
 }
